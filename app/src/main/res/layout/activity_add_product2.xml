@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductActivity">
+
+    <TextView
+        android:id="@+id/LblInserir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Inserir item a comprar:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="NOME:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblInserir" />
+
+    <TextView
+        android:id="@+id/lblMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="MARCA:"
+        app:layout_constraintTop_toBottomOf="@+id/lblNome"
+        tools:layout_editor_absoluteX="23dp" />
+
+    <TextView
+        android:id="@+id/lblQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="QNT:"
+        app:layout_constraintTop_toBottomOf="@+id/lblMarca"
+        tools:layout_editor_absoluteX="23dp" />
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="331dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblNome"
+        app:layout_constraintStart_toEndOf="@+id/lblNome" />
+
+    <EditText
+        android:id="@+id/txtMarca"
+        android:layout_width="331dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblMarca"
+        app:layout_constraintStart_toEndOf="@+id/lblMarca" />
+
+    <EditText
+        android:id="@+id/txtQnt"
+        android:layout_width="331dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblQuantidade"
+        app:layout_constraintStart_toEndOf="@+id/lblQuantidade" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
+        android:text="Insere"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblQuantidade" />
+
+    <Button
+        android:id="@+id/btnCancela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

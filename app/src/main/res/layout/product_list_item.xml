@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/lblQnt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quantidade"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/lblMarca2"
+            app:layout_constraintTop_toBottomOf="@+id/lblNome2" />
+
+        <TextView
+            android:id="@+id/lblStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="status"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblNome2" />
+
+        <TextView
+            android:id="@+id/lblMarca2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Marca"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblNome2" />
+
+        <TextView
+            android:id="@+id/lblNome2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Nome"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
