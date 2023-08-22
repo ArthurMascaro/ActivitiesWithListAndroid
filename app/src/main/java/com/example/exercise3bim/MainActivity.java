@@ -15,6 +15,8 @@ import com.example.exercise3bim.src.model.Produto;
 
 import java.util.ArrayList;
 
+// Arthur Mascaro e Gustavo Trizotti
+
 public class MainActivity extends AppCompatActivity {
 
     private ListView listaProdutos;
